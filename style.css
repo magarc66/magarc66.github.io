@@ -1,0 +1,140 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f9f9f9;
+}
+
+/* HEADER */
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.social-media a {
+    height: 20px;
+    margin-right: 10px;
+    color: #ff4c4f
+    
+
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url("images/hero-background.jpg") center/cover no-repeat;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* CONTENT SECTIONS */
+.content-row {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.content-row.reverse {
+    flex-direction: row-reverse;
+    background-color: #f0f0f0;
+}
+
+.content-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0044cc;
+}
+
+.footer-social a {
+    height: 20px;
+    margin-left: 10px;
+    color:#ff4c4f
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 10px 0;
+}
