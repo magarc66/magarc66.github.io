@@ -7,49 +7,73 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background-color: #f9f9f9;
+    color: #f0f0f0;
+    background-color: #0D1B2A;
 }
 
 /* HEADER */
 header {
-    border-bottom: 1px solid #ccc;
+    background-color: #415A77;
+    border-bottom: 1px solid #E0A458;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-    background-color: white;
+    padding: 10px;
+    background-color: #FFFFFF;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .logo img {
-    height: 100px;
+    height: 80px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .social-media a {
-    height: 20px;
-    margin-right: 10px;
-    color: #ff4c4f
-    
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
 
+/* Brand Colors */
+.social-media a .fa-youtube {
+    color: #FF0000; /* YouTube red */
+}
+
+.social-media a .fa-twitter {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+.social-media a .fa-discord {
+    color: #5865F2; /* Discord blurple */
+}
+
+/* Hover Effect */
+.social-media a:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
 }
 
 /* NAVIGATION */
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #0D1B2A;
     list-style: none;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 nav ul li {
@@ -72,9 +96,7 @@ nav ul li a {
 
 .hero-text h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
-    
-    
+    margin-bottom: 10px; 
 }
 
 .hero-text p {
@@ -87,10 +109,11 @@ nav ul li a {
     align-items: center;
     padding: 50px 10%;
     gap: 40px;
+    border-top: 3px solid #ccc;
 }
 
 .content-image img {
-    width: 100%;
+    width: 125%;
     max-width: 400px;
     border-radius: 10px;
 }
@@ -104,7 +127,8 @@ footer {
     background-color: #fff;
     border-top: 1px solid #ccc;
     margin-top: 40px;
-    text-align: center;
+    text-align: center;   
+    border-top: 3px solid #FF0000;
 }
 
 .footer-left {
@@ -127,11 +151,32 @@ footer {
 .footer-social a {
     height: 20px;
     margin-left: 10px;
-    color:#ff4c4f
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+/* Each platform color */
+.footer-social a .fa-youtube {
+    color: #FF0000;  /* YouTube Red */
+}
+
+.footer-social a .fa-twitter {
+    color: #1DA1F2;  /* Twitter Blue */
+}
+
+.footer-social a .fa-discord {
+    color: #5865F2;  /* Discord Purple */
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .footer-bottom {
     font-size: 0.9rem;
     color: #555;
     padding: 10px 0;
+    font-style: italic;
 }
