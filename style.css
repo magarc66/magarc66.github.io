@@ -63,16 +63,18 @@ nav ul li a {
 }
 
 /* HERO SECTION */
-.hero {
-    background: url("images/hero-background.jpg") center/cover no-repeat;
+.homehero {
+    background: url("Building.png") center/cover no-repeat;
     text-align: center;
     color: white;
-    padding: 100px 20px;
+    padding: 300px 100px;
 }
 
 .hero-text h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    
+    
 }
 
 .hero-text p {
@@ -85,11 +87,6 @@ nav ul li a {
     align-items: center;
     padding: 50px 10%;
     gap: 40px;
-}
-
-.content-row.reverse {
-    flex-direction: row-reverse;
-    background-color: #f0f0f0;
 }
 
 .content-image img {
@@ -110,7 +107,7 @@ footer {
     text-align: center;
 }
 
-.footer-top {
+.footer-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
