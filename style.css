@@ -74,6 +74,7 @@ nav ul {
     list-style: none;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
+    gap: 125px;
 }
 
 nav ul li {
