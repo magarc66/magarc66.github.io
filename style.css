@@ -1,4 +1,3 @@
-/* BASIC RESET */
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +10,10 @@ body {
     background-color: #0D1B2A;
 }
 
-/* HEADER */
+/* Header */
 header {
-    background-color: #415A77;
-    border-bottom: 1px solid #E0A458;
+    /* background-color: #415A77; */
+    border-bottom: 4px solid #415A77;
 }
 
 .header-container {
@@ -22,7 +21,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #0D1B2A;
+    border-bottom: 4px solid #415A77;
 }
 
 .logo {
@@ -32,7 +32,7 @@ header {
 }
 
 .logo img {
-    height: 80px;
+    height: 75px;
 }
 
 .social-media {
@@ -47,17 +47,20 @@ header {
     transition: transform 0.2s ease, color 0.3s ease;
 }
 
-/* Brand Colors */
+/* Brand Colors on the Header Container */
 .social-media a .fa-youtube {
-    color: #FF0000; /* YouTube red */
+    /* YouTube Red */
+    color: #FF0000; 
 }
 
 .social-media a .fa-twitter {
-    color: #1DA1F2; /* Twitter blue */
+    /* Twitter blue */
+    color: #1DA1F2; 
 }
 
 .social-media a .fa-discord {
-    color: #5865F2; /* Discord blurple */
+    /* Discord purple */
+    color: #5865F2; 
 }
 
 /* Hover Effect */
@@ -66,14 +69,12 @@ header {
     opacity: 0.85;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
     background-color: #0D1B2A;
     list-style: none;
-    border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
     gap: 125px;
 }
 
@@ -83,11 +84,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #0044cc;
+    color: #1E40Af;
     font-weight: bold;
 }
 
-/* HERO SECTION */
+nav ul li a:hover {
+    color: #E0A458;
+}
+
+/* Hero Section */
 .homehero {
     background: url("Building.png") center/cover no-repeat;
     text-align: center;
@@ -96,21 +101,23 @@ nav ul li a {
 }
 
 .hero-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px; 
+    font-size: 2.2rem;
+    margin-bottom: 25px; 
+    color: #FFEA00;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    color: #FFEA00;
 }
 
-/* CONTENT SECTIONS */
+/* Content Sections */
 .content-row {
     display: flex;
     align-items: center;
     padding: 50px 10%;
     gap: 40px;
-    border-top: 3px solid #ccc;
+    border-top: 6px solid #415A77;
 }
 
 .content-image img {
@@ -120,16 +127,19 @@ nav ul li a {
 }
 
 .content-text {
-    flex: 1;
+    flex: 1;  
 }
 
-/* FOOTER */
+.content-text h3 {
+    color: #E0A458;
+}
+
+/* Footer Sections */
 footer {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: #0D1B2A;
+    border-top: 6px solid #415A77;
     margin-top: 40px;
-    text-align: center;   
-    border-top: 3px solid #FF0000;
+    text-align: center;    
 }
 
 .footer-left {
@@ -140,13 +150,31 @@ footer {
 }
 
 .footer-logo img {
-    height: 60px;
+    height: 70px;
+}
+
+.footer-nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 70px; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    display: inline-block; 
 }
 
 .footer-nav a {
-    margin: 0 10px;
     text-decoration: none;
-    color: #0044cc;
+    color: #1E40Af;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #E0A458;
 }
 
 .footer-social a {
@@ -157,17 +185,20 @@ footer {
     transition: transform 0.2s ease, opacity 0.3s ease;
 }
 
-/* Each platform color */
+/* Brand colors on the Footer Social */
 .footer-social a .fa-youtube {
-    color: #FF0000;  /* YouTube Red */
+    /* YouTube Red */
+    color: #FF0000;  
 }
 
 .footer-social a .fa-twitter {
-    color: #1DA1F2;  /* Twitter Blue */
+    /* Twitter Blue */
+    color: #1DA1F2;  
 }
 
 .footer-social a .fa-discord {
-    color: #5865F2;  /* Discord Purple */
+    /* Discord Purple */
+    color: #5865F2;  
 }
 
 .footer-social a:hover {
